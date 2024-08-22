@@ -1,9 +1,30 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --link-color: #1a0dab;
+  }
+  
+  [data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --link-color: #8ab4f8;
+  }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
+
+h2 {
+    
+}
+
+a {
+    color: var(--link-color);
+  }
 
 header {
     background-color: #333;
@@ -11,6 +32,92 @@ header {
     padding: 1rem;
     text-align: center;
 }
+
+/* Attackers Dropdown Button */
+.attackersbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .attackersdrop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .attackersdrop-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    overflow: scroll;
+    max-height: 400px;
+  }
+  
+  /* Links inside the dropdown */
+  .attackersdrop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .attackersdrop-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .attackersdrop:hover .attackersdrop-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .attackersdrop:hover .attackersbtn {background-color: #3e8e41;}
+
+  /*  Defenders Dropdown Button */
+.defendersbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .defendersdrop {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .defendersdrop-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .defendersdrop-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .defendersdrop-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .defendersdrop:hover .defendersdrop-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .defendersdrop:hover .defendersbtn {background-color: #3e8e41;}
 
 main {
     padding: 2rem;

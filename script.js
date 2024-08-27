@@ -1,4 +1,4 @@
-const toggleButton = document.getElementById('theme-toggle');
+const toggleButton = document.getElementsByClassName('theme-toggle');
 
 // Check for saved user preference or system preference
 const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');

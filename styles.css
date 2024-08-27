@@ -19,18 +19,23 @@ body {
 }
 
 h2 {
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a {
     color: var(--link-color);
   }
 
+.theme-toggle {
+  background-color: blue;
+}
+
 header {
     background-color: #333;
     color: white;
     padding: 1rem;
     text-align: center;
+
 }
 
 /* Attackers Dropdown Button */
